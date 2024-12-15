@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Neue Frutiger';
+  src: url('./fonts/NeueFrutigerWorld-Regular.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Frutiger';
+  src: url('./NeueFrutigerWorld-Bold.ttf') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}

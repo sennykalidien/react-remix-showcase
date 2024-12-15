@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply bg-white text-black
+  }
+
+  .link {
+    @apply inline-block relative after:content-[''] after:w-[0] after:h-[2px] after:absolute after:top-[115%] after:left-0 after:bg-white after:duration-300 hover:after:w-full [&.active]:after:w-full [&:not(:hover,.active)]:after:right-0 [&:not(:hover,.active)]:after:left-auto
+  }
+
+  .btn {
+    @apply inline-block py-2 px-4 bg-transparent text-secondary text-sm rounded-md border-2 border-secondary uppercase font-semibold hover:text-white hover:shadow-secondary hover:shadow-[inset_150px_0_0_0] transition-[color,box-shadow] duration-500
+  }
+
+  .section {
+    @apply py-10
+  }
+}
