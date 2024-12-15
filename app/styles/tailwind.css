@@ -8,7 +8,7 @@
   }
 
   .link {
-    @apply inline-block relative after:content-[''] after:w-[0] after:h-[2px] after:absolute after:top-[115%] after:left-0 after:bg-white after:duration-300 hover:after:w-full [&.active]:after:w-full [&:not(:hover,.active)]:after:right-0 [&:not(:hover,.active)]:after:left-auto
+    @apply inline-block relative after:content-[''] after:w-[0] after:h-[2px] after:absolute after:top-[115%] after:left-0 after:bg-schiphol-blue after:duration-300 hover:after:w-full [&.active]:after:w-full [&:not(:hover,.active)]:after:right-0 [&:not(:hover,.active)]:after:left-auto
   }
 
   .btn {

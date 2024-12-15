@@ -7,11 +7,8 @@ export * from './FlightsSearch'
 export { default as FlightList } from './FlightsList'
 export * from './FlightsList'
 
-export { default as FlightItem } from './FlightsItem'
-export * from './FlightsItem'
-
-export { default as FlightsSorter } from './FlightsSorter'
-export * from './FlightsSorter'
+export { default as FlightsSorter } from './FlightsSortSelect'
+export * from './FlightsSortSelect'
 
 export { default as FlightsTotalCount } from './FlightsTotalCount'
 export * from './FlightsTotalCount'

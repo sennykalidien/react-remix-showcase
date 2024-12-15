@@ -17,7 +17,7 @@ function Select({
 }: SelectProps) {
   return (
   <div className="relative">
-    <select className={clsx("appearance-none")} {...props}>
+    <select className={clsx(className, "appearance-none cursor-pointer")} {...props}>
       {children}
     </select>
   </div>

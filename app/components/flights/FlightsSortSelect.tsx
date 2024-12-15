@@ -3,7 +3,7 @@ import { Select } from "~/components/common";
 import { useFlights } from "~/hooks";
 import { SortDirection } from "~/types";
 
-function FlightsSorter() {
+function FlightsSortSelect() {
   const { sortFlights } = useFlights()
   const [value, setValue] = useState<SortDirection>(SortDirection.Ascending)
 
@@ -15,8 +15,8 @@ function FlightsSorter() {
   }
 
   return (
-    <div className="flex">
-      <label className="mr-2">Order Date:</label>
+    <div className="flex items-center mb-4">
+      <label className="mr-2 font-bold">Order</label>
       <Select id="sort-flights" name="sort-flights" defaultValue={value} hasError={false} className="appearance-none p-2" onChange={handleChange}>
         <option value={SortDirection.Ascending}>Ascending</option>
         <option value={SortDirection.Descending}>Descending</option>
@@ -25,4 +25,4 @@ function FlightsSorter() {
   )
 }
 
-export default FlightsSorter;
+export default FlightsSortSelect;
