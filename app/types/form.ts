@@ -1,8 +1,8 @@
-import { ChangeEvent } from "react";
+import { Booleanish } from '~/types/component'
 
 export enum SortDirection {
-  Ascending = "ASCENDING",
-  Descending = "DESCENDING"
+  Ascending = 'ASCENDING',
+  Descending = 'DESCENDING',
 }
 
 export interface InputComponentProps {
@@ -10,5 +10,8 @@ export interface InputComponentProps {
   name: string
   hasError: boolean
   defaultValue?: string
+  autoFocus: boolean
+  autocomplete?: string
+  autocorrect?: string
+  spellcheck?: Booleanish
 }
-
