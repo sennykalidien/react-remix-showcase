@@ -68,8 +68,8 @@ function FlightsSearch({ initialFocus = false }: FlightSearchProps) {
           onChange={handleChange}
           hasError={!!error}
           autoFocus={initialFocus}
-          autocomplete="off"
-          autocorrect="off"
+          autoComplete="off"
+          autoCorrect="off"
           spellcheck="false"
           aria-label="the airport destination"
         />

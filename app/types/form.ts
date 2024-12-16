@@ -11,7 +11,7 @@ export interface InputComponentProps {
   hasError: boolean
   defaultValue?: string
   autoFocus: boolean
-  autocomplete?: string
-  autocorrect?: string
+  autoComplete?: string
+  autoCorrect?: string
   spellcheck?: Booleanish
 }

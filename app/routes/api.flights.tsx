@@ -7,7 +7,7 @@ import { Flight } from '~/types'
 const defaultLimit = 14 // count of all items in flightsData (flights.json)
 
 const filterFlights = (data: Flight[], query: string) =>
-  flightsData.flights.filter((f) => f.airport.toLowerCase().search(query.toLowerCase()))
+  flightsData.flights.filter((f) => f.airport.toLowerCase().includes(query.toLowerCase()))
 
 const delay = (ms: number) => {
   return new Promise((resolve) => setTimeout(resolve, ms))
@@ -48,21 +48,4 @@ export async function loader({ request }: LoaderFunctionArgs) {
     default:
       return json({ success: false, data: { error: new Error('Not a valid request') } }, 200)
   }
-
-  // Old method
-  // // if no query has been requested, send full list
-  // if (!query) {
-  //   return json({ success: true, data }, 200)
-  // }
-  //
-  // // if query isn't valid
-  // if (!validateQuery(query))
-  //   return json({ success: false, data: { error: new Error('Please enter more than 3 characters') } }, 200)
-  //
-  // // filter data by query
-  // const filteredData = filterFlights(data, query)
-  //
-  // // Limit data based on limit param
-  // filteredData.slice(0, limit)
-  // return json({ success: true, data: filteredData }, 200)
 }

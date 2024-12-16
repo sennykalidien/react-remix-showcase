@@ -20,8 +20,6 @@ const useFlights = () => {
       setIsFetching(true)
       const data = await getFlightsFromApi()
 
-      console.log(data)
-
       setFlightsData(data)
     } catch (error) {
       setFetchingError(error as Error)
